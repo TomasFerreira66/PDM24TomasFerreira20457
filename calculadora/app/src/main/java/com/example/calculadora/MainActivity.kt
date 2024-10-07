@@ -35,6 +35,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
+
     )
 }
 
@@ -42,6 +43,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     CalculadoraTheme {
-        Greeting("World")
+        Greeting("test")
     }
 }
