@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "calculadora"
+rootProject.name = "Calculadora"
 include(":app")
