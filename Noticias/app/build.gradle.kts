@@ -1,16 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    // Add kapt plugin for annotation processing with Room
-    id("kotlin-kapt")
 }
 
 android {
-    namespace = "com.example.armazenamento"
+    namespace = "com.example.noticias"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.armazenamento"
+        applicationId = "com.example.noticias"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -61,14 +59,6 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-
-    // Add Room dependencies
-    implementation("androidx.room:room-runtime:2.6.1")
-    annotationProcessor("androidx.room:room-compiler:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

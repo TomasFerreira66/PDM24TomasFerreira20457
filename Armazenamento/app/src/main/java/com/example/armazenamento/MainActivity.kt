@@ -62,7 +62,7 @@ abstract class ExampleDatabase : RoomDatabase() {
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+       // enableEdgeToEdge()
 
         // Get the database instance
         val db = ExampleDatabase.getInstance(applicationContext)
